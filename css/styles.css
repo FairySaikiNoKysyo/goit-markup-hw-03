@@ -36,11 +36,11 @@ $color-dairy: rgba(252,252,252,1);
   --primary-font: "Roboto", sans-serif;
   /* Text colors */
 
-  /* Bg colors */
-
   /* Common colors */
 
   /* Others */
+  --flex-item: 3;
+  --gap-size: 24px;
 
   /* $color-ocean: rgba(64, 75, 191, 1); 
   $color-navy-blue: rgba(46, 47, 66, 1);
@@ -91,11 +91,25 @@ img {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 
-  outline: 2px solid orange;
+ 
 }
-.section{
+.section {
   padding-bottom: 120px;
+}
+/* card set  */
+.card-set {
+  
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--gap-size);
+  row-gap: 48px;
+}
+
+.card-item {
+  width: ((100% - var(var(--gap-size)) * (var(--flex-item) - 1)) / var(--flex-item));
 }
 
 /* heading text  */
@@ -139,6 +153,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #e7e9fc;
 }
 .portfolio-nav,
 .section-nav {
@@ -210,7 +225,7 @@ img {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align:center;
+  text-align: center;
   letter-spacing: 0.02em;
   margin-bottom: 48px;
   width: 496px;
@@ -241,10 +256,11 @@ img {
 
 .section-list {
   display: flex;
-  column-gap: 24px; 
+  column-gap: 24px;
 }
+.card-h,
 .we-are-h,
-.team-h{
+.team-h {
   margin-bottom: 8px;
 }
 .list-item {
@@ -269,9 +285,9 @@ img {
 .team-bg-clr {
   background-color: #fff;
 }
-.team-name-container{
- padding: 32px 16px; 
- text-align: center;
+.team-name-container {
+  padding: 32px 16px;
+  text-align: center;
 }
 .section-undertitle {
 }
@@ -283,7 +299,7 @@ img {
   color: #f4f4fd;
   width: 264px;
 }
-.footer-logo{
+.footer-logo {
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 800;
@@ -292,14 +308,10 @@ img {
   color: var(--focused-txt-cl);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-
-
 }
- .footer-h{
-  margin-bottom:16px;
-
-} 
+.footer-h {
+  margin-bottom: 16px;
+}
 /* main-classes-end */
 
 /* portfolio-classes-start */
@@ -308,12 +320,17 @@ img {
 .main-footer-section {
   background-color: var(--footer-bg-cl);
   padding-top: 100px;
-  padding-bottom:100px;
+  padding-bottom: 100px;
 }
 
 .section-filters {
 }
 .filters-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px ;
 }
 .filters-item {
 }
@@ -327,6 +344,13 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  text-align: center;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 .filters-button:hover,
 .filters-button:focus {
@@ -334,12 +358,21 @@ img {
   background-color: var(--focused-bg-cl);
 }
 .portfolio-section {
+  margin-top: 96px;
+  margin-bottom: 120px;
 }
-.portfolio-list {
+.card-name-container{
+  padding-top:32px;
+  padding-right: auto;
+  padding-bottom:32px;
+  padding-left: 16px;
 }
-.portfolio-item {
-}
+
 .portfolio-link {
+}
+.portfolio-item{
+  
+  
 }
 
 /* portfolio classes end */
