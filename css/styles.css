@@ -260,10 +260,7 @@ img {
 .section-we-are {
   padding-top: 120px;
 }
-.section-card-list {
-  display: flex;
-  gap: var(--gap-size);
-}
+
 .section-list {
   display: flex;
   gap: var(--gap-size);
@@ -280,6 +277,14 @@ img {
 /* what we are doing  */
 .section-what-we-are-doing {
 }
+.section-card-list {
+  display: flex;
+  gap: var(--gap-size);
+}
+.list-card-item{
+  width: calc((100% - 48px) / 3); 
+}
+
 .main-h {
   font-weight: 700;
   font-size: 36px;
