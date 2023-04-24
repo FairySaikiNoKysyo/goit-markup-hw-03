@@ -201,7 +201,6 @@ img {
 .link-styles:hover,
 .link-styles:focus {
   color: var(--hover-txt-color);
- 
 }
 
 .adress-styles:hover,
@@ -281,8 +280,8 @@ img {
   display: flex;
   gap: var(--gap-size);
 }
-.list-card-item{
-  width: calc((100% - 48px) / 3); 
+.list-card-item {
+  width: calc((100% - 48px) / 3);
 }
 
 .main-h {
@@ -383,9 +382,10 @@ img {
 }
 .card-name-container {
   padding-top: 32px;
-  padding-right: auto;
+  padding-right: 16px;
   padding-bottom: 32px;
   padding-left: 16px;
+  border: 1px solid #e7e9fc;
 }
 
 .portfolio-link {
